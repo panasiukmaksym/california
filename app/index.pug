@@ -1,0 +1,229 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title CALIFORNIA
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/style.min.css")
+    body 
+
+        .container 
+
+            header.header
+
+                nav.nav 
+
+                    .nav__logo 
+                        img(src="images/logo.png", alt="logo")
+
+                    ul.nav__links
+                        li 
+                            a(href="#") all products
+                        li.nav__drop 
+                            a(href="#")  solutions
+                            img(src="icons/vector-down.png", alt="vector")
+                            ul.nav__dropdown 
+                                li solutions 1
+                                li solutions 2
+                                li solutions 3
+                        li 
+                            a(href="#") about
+                        li 
+                            a(href="#") support
+
+                    .nav__buttons 
+                        button.nav__search 
+                            img(src="icons/search.png", alt="search")
+                        button.nav__cart 
+                            img(src="icons/cart.png", alt="cart")
+            
+            main.main 
+
+                section.first 
+
+                    .first__left 
+                        h1.first__title The new phones are here take a look.
+                        h2.first__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+                        button.first__button.button Explore
+
+                    .first__right 
+                        img(src="images/first-screen.png", alt="iphone 13")
+
+                    .first__lines 
+                        .first__line 
+                        .first__line 
+                        .first__line 
+                
+                section.categories 
+
+                    h2.title Shop our latest offers and categories
+                    h3.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                    .categories__block 
+
+                        .categories__left 
+
+                            .categories__laptop 
+                                .categories__image 
+                                    img(src="images/laptop.png", alt="macbook")
+                                .categories__info 
+                                    p.categories__descr Laptops
+                                    p.categories__text True Laptop Solution
+
+                            .categories__watch 
+                                .categories__image 
+                                    img(src="images/watch.png", alt="macbook")
+                                .categories__info 
+                                    p.categories__descr Watch
+                                    p.categories__text Not just stylisht
+
+                        .categories__right 
+
+                            .categories__phone 
+                                .categories__image 
+                                    img(src="images/phone.png", alt="macbook")
+                                .categories__info 
+                                    p.categories__descr Phones
+                                    p.categories__text Your day to day life
+
+                            .categories__ipad 
+                                .categories__info 
+                                    p.categories__descr Tablet
+                                    p.categories__text Empower your work
+                                .categories__image 
+                                    img(src="images/ipad.png", alt="macbook")
+                
+                section.sale 
+                    h2.title Save on our most selled items.
+                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    .sale__block 
+                        .sale__card 
+                            img(src="images/card-macbook.png", alt="macbook pro 13")
+                            .sale__name MacBook Pro 13
+                            .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                            .sale__price $ 1,200.00 USD
+                        .sale__card 
+                            img(src="images/card-watch.png", alt="smart galaxy watch")
+                            .sale__name Smart Galaxy Watch 3
+                            .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                            .sale__price $ 199.00 USD
+                        .sale__card 
+                            img(src="images/card-macbook-pro.png", alt="macbook air m1")
+                            .sale__name MacBook Air M1
+                            .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                            .sale__price $ 1,009.00 USD
+                        .sale__card 
+                            img(src="images/card-ipad.png", alt="ipad")
+                            .sale__name iPad
+                            .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                            .sale__price $ 610.00 USD
+
+                section.service 
+                    h2.title See the best around here
+                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    .service__block 
+                        .service__card 
+                            p.service__descr Smart light bulb pack
+                            p.service__name Latest and gratest
+                            button.service__button.button Explore
+                            .service__image 
+                                img(src="images/service-card-watch.png", alt="watch")
+                        .service__card 
+                            p.service__descr Smart light bulb pack
+                            p.service__name Best selling
+                            button.service__button.button Explore
+                            .service__image 
+                                img(src="images/service-card-iphone.png", alt="watch")
+                        .service__card 
+                            p.service__descr Smart light bulb pack
+                            p.service__name Every product
+                            button.service__button.button Explore
+                            .service__image 
+                                img(src="images/service-card-macbook.png", alt="watch")
+
+                section.ideas 
+                    h2.title Ideas have a place here
+                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    .ideas__block 
+                        .ideas__image 
+                            img(src="images/book.png", alt="book")
+                        .ideas__text 
+                            p.ideas__string We Make It Easy To Find The Great Design Talent, Easier...
+                            p.ideas__string Road Design Handbook For The International Road...
+                            p.ideas__string The Best Kept Secrets About Creative People
+                            p.ideas__string We Make It Easy To Find The Great Design Talent, Easier...
+                    .ideas__footer 
+                        .ideas__descr See all
+                        button.ideas__button 
+                            img(src="icons/vector-top-right.png", alt="vector")
+
+                section.search 
+                    h2.title Looking for anything else?
+                    .search__area 
+                        img(src="icons/search.png", alt="search")
+                        input(type="text", placeholder="Search keyword").search__input
+                    .search__block 
+                        button.search__card 
+                            p iPhone 
+                        button.search__card 
+                            p Charger 
+                        button.search__card 
+                            p Gift 
+                        button.search__card 
+                            p Google Pixel 3
+                        button.search__card 
+                            p Keyboard 
+                        button.search__card 
+                            p 13 Pro Max 
+                        button.search__card 
+                            p iPhone 12
+                        button.search__card 
+                            p Laptop 
+                        button.search__card 
+                            p Mobile
+
+                section.feedback 
+                    h2.title Never miss a thing
+                    h3.feedback__subtitle Sign up for texts to be notified about our best offers on the perfect gifts.
+                    .feedback__image    
+                        img(src="images/feedback.png", alt="macbook")
+                    form(action="#").feedback__form
+                        input(type="text", placeholder="Your email").feedback__input
+                        input(type="button", value="Sign up").feedback__button
+
+        footer.footer 
+
+            .footer__block 
+
+                .footer__left 
+                    .footer__image 
+                        img(src="images/logo.png", alt="logo")
+                    h2.footer__descr Sign up for texts to be notified about our best offers on the perfect gifts.
+
+                .footer__right
+                    .footer__card
+                        a(href="#").footer__link_big All products
+                        a(href="#").footer__link Phones
+                        a(href="#").footer__link Watch
+                        a(href="#").footer__link Tablet
+                        a(href="#").footer__link Laptops
+                    .footer__card
+                        a(href="#").footer__link_big Company
+                        a(href="#").footer__link About
+                        a(href="#").footer__link Support
+                    .footer__card
+                        a(href="#").footer__link_big Support
+                        a(href="#").footer__link Style Guide
+                        a(href="#").footer__link Licensing
+                        a(href="#").footer__link Change Log
+                        a(href="#").footer__link Contact
+                    .footer__card 
+                        a(href="#").footer__link_big Follow Us
+                        a(href="#").footer__link Instagram
+                        a(href="#").footer__link Facebook
+                        a(href="#").footer__link LinkedIn
+                        a(href="#").footer__link Youtube
