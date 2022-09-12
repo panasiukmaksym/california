@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body> 
+    <div class="overflow"> 
+      <div class="menu"> 
+        <div class="menu__close"> <img src="icons/close.svg" alt="close button"></div>
+        <div class="menu__links"> <a href="#">all products</a><a href="#">solutions</a><a href="#">about</a><a href="#">support</a></div>
+      </div>
+    </div>
     <div class="container"> 
       <header class="header">
         <nav class="nav"> 
           <div class="nav__logo"> <img src="images/logo.png" alt="logo"></div>
           <ul class="nav__links">
             <li> <a href="#">all products</a></li>
-            <li class="nav__drop"> <a href="#"> solutions</a><img src="icons/vector-down.png" alt="vector">
+            <li class="nav__drop"> <a href="#">solutions</a><img src="icons/vector-down.png" alt="vector">
               <ul class="nav__dropdown"> 
                 <li>solutions 1</li>
                 <li>solutions 2</li>
@@ -161,33 +167,15 @@
             <input class="search__input" type="text" placeholder="Search keyword">
           </div>
           <div class="search__block"> 
-            <button class="search__card"> 
-              <p>iPhone </p>
-            </button>
-            <button class="search__card"> 
-              <p>Charger </p>
-            </button>
-            <button class="search__card"> 
-              <p>Gift </p>
-            </button>
-            <button class="search__card"> 
-              <p>Google Pixel 3</p>
-            </button>
-            <button class="search__card"> 
-              <p>Keyboard </p>
-            </button>
-            <button class="search__card"> 
-              <p>13 Pro Max </p>
-            </button>
-            <button class="search__card"> 
-              <p>iPhone 12</p>
-            </button>
-            <button class="search__card"> 
-              <p>Laptop </p>
-            </button>
-            <button class="search__card"> 
-              <p>Mobile</p>
-            </button>
+            <button class="search__card">iPhone </button>
+            <button class="search__card">Charger </button>
+            <button class="search__card">Gift </button>
+            <button class="search__card">Google Pixel 3</button>
+            <button class="search__card">Keyboard </button>
+            <button class="search__card">13 Pro Max </button>
+            <button class="search__card">iPhone 12</button>
+            <button class="search__card">Laptop </button>
+            <button class="search__card">Mobile</button>
           </div>
         </section>
         <section class="feedback"> 
@@ -195,7 +183,7 @@
           <h3 class="feedback__subtitle">Sign up for texts to be notified about our best offers on the perfect gifts.</h3>
           <div class="feedback__image">   <img src="images/feedback.png" alt="macbook"></div>
           <form class="feedback__form" action="#">
-            <input class="feedback__input" type="email" placeholder="Your email">
+            <input class="feedback__input" type="email" placeholder="Your email" value="">
             <input class="feedback__button" type="button" value="Sign up">
           </form>
         </section>

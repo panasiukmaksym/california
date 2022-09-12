@@ -11,6 +11,16 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.min.css")
     body 
 
+        .overflow  
+            .menu 
+                .menu__close 
+                    img(src="icons/close.svg", alt="close button")
+                .menu__links 
+                    a(href="#") all products
+                    a(href="#") solutions
+                    a(href="#") about
+                    a(href="#") support
+
         .container 
 
             header.header
@@ -24,7 +34,7 @@ html(lang="en")
                         li 
                             a(href="#") all products
                         li.nav__drop 
-                            a(href="#")  solutions
+                            a(href="#") solutions
                             img(src="icons/vector-down.png", alt="vector")
                             ul.nav__dropdown 
                                 li solutions 1
@@ -179,24 +189,15 @@ html(lang="en")
                         img(src="icons/search.png", alt="search")
                         input(type="text", placeholder="Search keyword").search__input
                     .search__block 
-                        button.search__card 
-                            p iPhone 
-                        button.search__card 
-                            p Charger 
-                        button.search__card 
-                            p Gift 
-                        button.search__card 
-                            p Google Pixel 3
-                        button.search__card 
-                            p Keyboard 
-                        button.search__card 
-                            p 13 Pro Max 
-                        button.search__card 
-                            p iPhone 12
-                        button.search__card 
-                            p Laptop 
-                        button.search__card 
-                            p Mobile
+                        button.search__card iPhone 
+                        button.search__card Charger 
+                        button.search__card Gift 
+                        button.search__card Google Pixel 3
+                        button.search__card Keyboard 
+                        button.search__card 13 Pro Max 
+                        button.search__card iPhone 12
+                        button.search__card Laptop 
+                        button.search__card Mobile
 
                 section.feedback 
                     h2.title Never miss a thing
@@ -204,7 +205,7 @@ html(lang="en")
                     .feedback__image    
                         img(src="images/feedback.png", alt="macbook")
                     form(action="#").feedback__form
-                        input(type="email", placeholder="Your email").feedback__input
+                        input(type="email", placeholder="Your email", value="").feedback__input
                         input(type="button", value="Sign up").feedback__button
 
         footer.footer 
