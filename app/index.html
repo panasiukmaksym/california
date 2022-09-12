@@ -30,6 +30,7 @@
           <div class="nav__buttons"> 
             <button class="nav__search"> <img src="icons/search.png" alt="search"></button>
             <button class="nav__cart"> <img src="icons/cart.png" alt="cart"></button>
+            <div class="nav__menu"> <img src="icons/menu.svg" alt="menu"></div>
           </div>
         </nav>
       </header>
@@ -46,20 +47,22 @@
             <div class="first__line"> </div>
             <div class="first__line"> </div>
           </div>
+          <div class="first__left-button"> <img src="icons/vector-left.png" alt="button left"></div>
+          <div class="first__right-button"> <img src="icons/vector-right.png" alt="button right"></div>
         </section>
         <section class="categories"> 
           <h2 class="title">Shop our latest offers and categories</h2>
           <h3 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           <div class="categories__block"> 
             <div class="categories__left"> 
-              <div class="categories__laptop"> 
+              <div class="categories__laptop categories__card">
                 <div class="categories__image"> <img src="images/laptop.png" alt="macbook"></div>
                 <div class="categories__info"> 
                   <p class="categories__descr">Laptops</p>
                   <p class="categories__text">True Laptop Solution</p>
                 </div>
               </div>
-              <div class="categories__watch"> 
+              <div class="categories__watch categories__card">
                 <div class="categories__image"> <img src="images/watch.png" alt="macbook"></div>
                 <div class="categories__info"> 
                   <p class="categories__descr">Watch</p>
@@ -68,14 +71,14 @@
               </div>
             </div>
             <div class="categories__right"> 
-              <div class="categories__phone"> 
+              <div class="categories__phone categories__card">
                 <div class="categories__image"> <img src="images/phone.png" alt="macbook"></div>
                 <div class="categories__info"> 
                   <p class="categories__descr">Phones</p>
                   <p class="categories__text">Your day to day life</p>
                 </div>
               </div>
-              <div class="categories__ipad"> 
+              <div class="categories__ipad categories__card">
                 <div class="categories__info"> 
                   <p class="categories__descr">Tablet</p>
                   <p class="categories__text">Empower your work</p>
@@ -192,7 +195,7 @@
           <h3 class="feedback__subtitle">Sign up for texts to be notified about our best offers on the perfect gifts.</h3>
           <div class="feedback__image">   <img src="images/feedback.png" alt="macbook"></div>
           <form class="feedback__form" action="#">
-            <input class="feedback__input" type="text" placeholder="Your email">
+            <input class="feedback__input" type="email" placeholder="Your email">
             <input class="feedback__button" type="button" value="Sign up">
           </form>
         </section>
@@ -212,5 +215,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"> </script>
   </body>
 </html>

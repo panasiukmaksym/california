@@ -40,6 +40,8 @@ html(lang="en")
                             img(src="icons/search.png", alt="search")
                         button.nav__cart 
                             img(src="icons/cart.png", alt="cart")
+                        .nav__menu 
+                            img(src="icons/menu.svg", alt="menu")
             
             main.main 
 
@@ -57,6 +59,11 @@ html(lang="en")
                         .first__line 
                         .first__line 
                         .first__line 
+                    
+                    .first__left-button 
+                        img(src="icons/vector-left.png", alt="button left")
+                    .first__right-button 
+                        img(src="icons/vector-right.png", alt="button right")
                 
                 section.categories 
 
@@ -67,14 +74,14 @@ html(lang="en")
 
                         .categories__left 
 
-                            .categories__laptop 
+                            .categories__laptop.categories__card
                                 .categories__image 
                                     img(src="images/laptop.png", alt="macbook")
                                 .categories__info 
                                     p.categories__descr Laptops
                                     p.categories__text True Laptop Solution
 
-                            .categories__watch 
+                            .categories__watch.categories__card
                                 .categories__image 
                                     img(src="images/watch.png", alt="macbook")
                                 .categories__info 
@@ -83,14 +90,14 @@ html(lang="en")
 
                         .categories__right 
 
-                            .categories__phone 
+                            .categories__phone.categories__card
                                 .categories__image 
                                     img(src="images/phone.png", alt="macbook")
                                 .categories__info 
                                     p.categories__descr Phones
                                     p.categories__text Your day to day life
 
-                            .categories__ipad 
+                            .categories__ipad.categories__card
                                 .categories__info 
                                     p.categories__descr Tablet
                                     p.categories__text Empower your work
@@ -98,8 +105,10 @@ html(lang="en")
                                     img(src="images/ipad.png", alt="macbook")
                 
                 section.sale 
+
                     h2.title Save on our most selled items.
                     h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+
                     .sale__block 
                         .sale__card 
                             img(src="images/card-macbook.png", alt="macbook pro 13")
@@ -123,9 +132,12 @@ html(lang="en")
                             .sale__price $ 610.00 USD
 
                 section.service 
+
                     h2.title See the best around here
                     h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+
                     .service__block 
+
                         .service__card 
                             p.service__descr Smart light bulb pack
                             p.service__name Latest and gratest
@@ -192,7 +204,7 @@ html(lang="en")
                     .feedback__image    
                         img(src="images/feedback.png", alt="macbook")
                     form(action="#").feedback__form
-                        input(type="text", placeholder="Your email").feedback__input
+                        input(type="email", placeholder="Your email").feedback__input
                         input(type="button", value="Sign up").feedback__button
 
         footer.footer 
@@ -227,3 +239,5 @@ html(lang="en")
                         a(href="#").footer__link Facebook
                         a(href="#").footer__link LinkedIn
                         a(href="#").footer__link Youtube
+
+        script(src="js/script.min.js") 
