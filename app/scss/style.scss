@@ -112,6 +112,10 @@ button {
     align-items: center;
     border-radius: 32px;
     position: relative;
+    &:hover .first__right img {
+        transform: scale(1.12) translateY(-5%);
+        border-radius: 40px 40px 40px 40px;
+    }
     &__left-button {
         position: absolute;
         width: 14px;
@@ -404,11 +408,13 @@ button {
         padding: 12px 22px 13px 22px;
         border: 1px solid #C5C5C5;
         border-radius: 200px;
+        transition: 0.4s all;
         &:hover {
             background: #DCE5E2;
         }
         &:active {
-            color: #DCE5E2;
+            background: black;
+            color: white;
         }
     }
 }
