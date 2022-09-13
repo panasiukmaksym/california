@@ -8,6 +8,7 @@ html(lang="en")
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap", rel="stylesheet")
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css", rel="stylesheet")
         link(rel="stylesheet", href="css/style.min.css")
     body 
 
@@ -23,7 +24,7 @@ html(lang="en")
 
         .container 
 
-            header.header
+            header.header(data-aos="flip-up")
 
                 nav.nav 
 
@@ -55,7 +56,7 @@ html(lang="en")
             
             main.main 
 
-                section.first 
+                section.first(data-aos="fade-up" data-aos-duration="1000")
 
                     .first__left 
                         h1.first__title The new phones are here take a look.
@@ -77,21 +78,21 @@ html(lang="en")
                 
                 section.categories 
 
-                    h2.title Shop our latest offers and categories
-                    h3.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") Shop our latest offers and categories
+                    h3.subtitle(data-aos="flip-up" data-aos-duration="1000") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                     .categories__block 
 
                         .categories__left 
 
-                            .categories__laptop.categories__card
+                            .categories__laptop.categories__card(data-aos="fade-down" data-aos-duration="1500")
                                 .categories__image 
                                     img(src="images/laptop.png", alt="macbook")
                                 .categories__info 
                                     p.categories__descr Laptops
                                     p.categories__text True Laptop Solution
 
-                            .categories__watch.categories__card
+                            .categories__watch.categories__card(data-aos="fade-up" data-aos-duration="1500")
                                 .categories__image 
                                     img(src="images/watch.png", alt="macbook")
                                 .categories__info 
@@ -100,14 +101,14 @@ html(lang="en")
 
                         .categories__right 
 
-                            .categories__phone.categories__card
+                            .categories__phone.categories__card(data-aos="fade-up" data-aos-duration="1500")
                                 .categories__image 
                                     img(src="images/phone.png", alt="macbook")
                                 .categories__info 
                                     p.categories__descr Phones
                                     p.categories__text Your day to day life
 
-                            .categories__ipad.categories__card
+                            .categories__ipad.categories__card(data-aos="fade-down" data-aos-duration="1500")
                                 .categories__info 
                                     p.categories__descr Tablet
                                     p.categories__text Empower your work
@@ -116,26 +117,26 @@ html(lang="en")
                 
                 section.sale 
 
-                    h2.title Save on our most selled items.
-                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") Save on our most selled items.
+                    h3.subtitle(data-aos="flip-up" data-aos-duration="1000") Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
 
                     .sale__block 
-                        .sale__card 
+                        .sale__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100")
                             img(src="images/card-macbook.png", alt="macbook pro 13")
                             .sale__name MacBook Pro 13
                             .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
                             .sale__price $ 1,200.00 USD
-                        .sale__card 
+                        .sale__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300")
                             img(src="images/card-watch.png", alt="smart galaxy watch")
                             .sale__name Smart Galaxy Watch 3
                             .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
                             .sale__price $ 199.00 USD
-                        .sale__card 
+                        .sale__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500")
                             img(src="images/card-macbook-pro.png", alt="macbook air m1")
                             .sale__name MacBook Air M1
                             .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
                             .sale__price $ 1,009.00 USD
-                        .sale__card 
+                        .sale__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700")
                             img(src="images/card-ipad.png", alt="ipad")
                             .sale__name iPad
                             .sale__info Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
@@ -143,24 +144,24 @@ html(lang="en")
 
                 section.service 
 
-                    h2.title See the best around here
-                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") See the best around here
+                    h3.subtitle(data-aos="flip-up" data-aos-duration="1000") Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
 
                     .service__block 
 
-                        .service__card 
+                        .service__card(data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100")
                             p.service__descr Smart light bulb pack
                             p.service__name Latest and gratest
                             button.service__button.button Explore
                             .service__image 
                                 img(src="images/service-card-watch.png", alt="watch")
-                        .service__card 
+                        .service__card(data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300")
                             p.service__descr Smart light bulb pack
                             p.service__name Best selling
                             button.service__button.button Explore
                             .service__image 
                                 img(src="images/service-card-iphone.png", alt="watch")
-                        .service__card 
+                        .service__card(data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500")
                             p.service__descr Smart light bulb pack
                             p.service__name Every product
                             button.service__button.button Explore
@@ -168,40 +169,40 @@ html(lang="en")
                                 img(src="images/service-card-macbook.png", alt="watch")
 
                 section.ideas 
-                    h2.title Ideas have a place here
-                    h3.subtitle Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") Ideas have a place here
+                    h3.subtitle(data-aos="flip-up" data-aos-duration="1000") Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
                     .ideas__block 
-                        .ideas__image 
+                        .ideas__image(data-aos="zoom-out-up" data-aos-duration="1000")
                             img(src="images/book.png", alt="book")
-                        .ideas__text 
+                        .ideas__text(data-aos="zoom-out-down" data-aos-duration="1000")
                             p.ideas__string We Make It Easy To Find The Great Design Talent, Easier...
                             p.ideas__string Road Design Handbook For The International Road...
                             p.ideas__string The Best Kept Secrets About Creative People
                             p.ideas__string We Make It Easy To Find The Great Design Talent, Easier...
-                    .ideas__footer 
+                    .ideas__footer(data-aos="fade-up" data-aos-duration="1000")
                         .ideas__descr See all
                         button.ideas__button 
                             img(src="icons/vector-top-right.png", alt="vector")
 
                 section.search 
-                    h2.title Looking for anything else?
-                    .search__area 
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") Looking for anything else?
+                    .search__area(data-aos="fade-up" data-aos-duration="1000")
                         img(src="icons/search.png", alt="search")
                         input(type="text", placeholder="Search keyword").search__input
                     .search__block 
-                        button.search__card iPhone 
-                        button.search__card Charger 
-                        button.search__card Gift 
-                        button.search__card Google Pixel 3
-                        button.search__card Keyboard 
-                        button.search__card 13 Pro Max 
-                        button.search__card iPhone 12
-                        button.search__card Laptop 
-                        button.search__card Mobile
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100") iPhone 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200") Charger 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300") Gift 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400") Google Pixel 3
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500") Keyboard 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600") 13 Pro Max 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700") iPhone 12
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800") Laptop 
+                        button.search__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900") Mobile
 
-                section.feedback 
-                    h2.title Never miss a thing
-                    h3.feedback__subtitle Sign up for texts to be notified about our best offers on the perfect gifts.
+                section.feedback(data-aos="fade-up" data-aos-duration="2000")
+                    h2.title(data-aos="flip-up" data-aos-duration="1000") Never miss a thing
+                    h3.feedback__subtitle(data-aos="flip-up" data-aos-duration="1000") Sign up for texts to be notified about our best offers on the perfect gifts.
                     .feedback__image    
                         img(src="images/feedback.png", alt="macbook")
                     form(action="#").feedback__form
@@ -209,7 +210,7 @@ html(lang="en")
                         .feedback__button-wrapper
                             input(type="button", value="Sign up").feedback__button
 
-        footer.footer 
+        footer.footer(data-aos="fade-up" data-aos-duration="1000")
 
             .footer__block 
 
@@ -243,3 +244,5 @@ html(lang="en")
                         a(href="#").footer__link Youtube
 
         script(src="js/script.min.js") 
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script AOS.init();

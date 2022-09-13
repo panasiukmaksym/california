@@ -49,7 +49,7 @@ lines.forEach( ( item, i ) => {
     });
 });
 
-leftButton.addEventListener('click', (event) => {
+function paintOnLeft() {
     if ( lines[0].classList.contains('first__line_active') ) {
         paintLine(2);
     } else if ( lines[1].classList.contains('first__line_active') ) {
@@ -57,14 +57,38 @@ leftButton.addEventListener('click', (event) => {
     } else if ( lines[2].classList.contains('first__line_active') ) {
         paintLine(1);
     }
+}
+
+function paintOnRight() {
+    if ( lines[0].classList.contains('first__line_active') ) {
+        paintLine(1);
+    } else if ( lines[1].classList.contains('first__line_active') ) {
+        paintLine(2);
+    } else if ( lines[2].classList.contains('first__line_active') ) {
+        paintLine(0);
+    }
+}
+
+leftButton.addEventListener('click', (event) => {
+    paintOnLeft();
 });
 
 rightButton.addEventListener('click', (event) => {
-    if ( lines[0].classList.contains('first__line_active') ) {
-        paintLine(1);
-    } else if ( lines[1].classList.contains('first__line_active') ) {
-        paintLine(2);
-    } else if ( lines[2].classList.contains('first__line_active') ) {
-        paintLine(0);
-    }
+    paintOnRight();
 });
+
+// Effect slide on first screen
+const firstScreen = document.querySelector('.first');
+let touchStart = 0;
+firstScreen.addEventListener('mousedown', event => {
+    touchStart = event.clientX;
+});
+firstScreen.addEventListener('mouseup', event => {
+    if ( touchStart < event.clientX ) {
+        paintOnLeft();
+    } else if ( touchStart > event.clientX ) {
+        paintOnRight();
+    } 
+});
+
+// Animation effect with plugin AOS

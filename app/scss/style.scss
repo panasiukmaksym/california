@@ -73,15 +73,20 @@ button {
         width: 100%;
         z-index: 10;
     }
+    &__links li:hover .first {
+        z-index: -100;
+    }
     &__dropdown li {
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
         padding: 6px;
+        z-index: 30;
     }
     &__dropdown {
         background: white;
         opacity: 0.8;
+        z-index: 30;
     }
     &__drop {
         display: flex;
@@ -112,6 +117,8 @@ button {
     align-items: center;
     border-radius: 32px;
     position: relative;
+    user-select: none; 
+    cursor: pointer;
     &:hover .first__right img {
         transform: scale(1.12) translateY(-5%);
         border-radius: 40px 40px 40px 40px;
@@ -139,6 +146,7 @@ button {
         height: 100%;
         img {
             width: 100%;
+            pointer-events: none;
         }
     }
     &__title {
@@ -471,6 +479,7 @@ button {
             background: black;
             padding: 8px;
             color: white;
+            cursor: pointer;
         }
     }
     // &__button {
