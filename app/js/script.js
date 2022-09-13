@@ -1,9 +1,7 @@
-document.querySelector('.search').addEventListener('click', (event) => {
-    if (event.path[1].classList[0] == 'search__card' || event.path[0].classList[0] == 'search__card') {
-        document.querySelector('.search__input').value = event.target.textContent;
-    }
-    // console.log(event.target.textContent);
-    // console.log(event.target);
+document.querySelectorAll('.search__card').forEach( item => {
+    item.addEventListener('click', (event) => {
+        document.querySelector('.search__input').value = item.textContent;
+    });
 });
 
 const overflow = document.querySelector('.overflow');
